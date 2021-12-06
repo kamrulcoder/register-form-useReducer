@@ -17,15 +17,12 @@ const reducer = (state, action) => {
     } else {
         return { ...state, [action.name]: action.value }
     }
-
 }
 
 
 const Register = () => {
 
     const [state, dispatch] = useReducer(reducer, initializeState);
-
-
 
     const handleSubmit = (e) => {
         e.preventDefault();
